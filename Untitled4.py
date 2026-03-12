@@ -4,11 +4,10 @@ class Human:
         self.nationality = nationality
          
 class Student(Human):
-    pass  # No additional attributes yet
+    pass 
 
 class Undergraduate(Student):
-    pass  # No additional attributes yet
-
+    pass  
 class ExchangeStudent:
     def __init__(self, xx, xy):
         self.xx = xx
@@ -16,7 +15,7 @@ class ExchangeStudent:
 
 class InternationalStudent(Undergraduate, ExchangeStudent):
     def __init__(self, name, nationality, xx, xy):
-        # Call the parent class constructors
+        
         Undergraduate.__init__(self, name, nationality)
         ExchangeStudent.__init__(self, xx, xy)
 
